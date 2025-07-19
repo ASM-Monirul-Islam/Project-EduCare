@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- NavBar HTML --------------------------->
@@ -13,7 +20,7 @@
         <div class="nav-first">
           <div class="logo"></div>
         </div>
-        <div class="nav-second">
+        <div class="nav-second nav-hidden">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Dashboard</a></li>
@@ -22,11 +29,36 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-        <div class="nav-third">
+        <div class="nav-third nav-hidden">
           <ul>
             <li id="nav-login">Login</li>
             <li id="nav-register">Register</li>
           </ul>
+        </div>
+        <div class="menu hidden-menu">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+      </div>
+
+      <!--Menu Options - For Mobile Version -->
+      <div class="menu-bg menu-card-hidden">
+        <div class="menu-left-side">
+          <div class="menu-left-text">
+            <div class="para">Join EduCare and simplify your student life today - it’s free,
+              fast, and designed for you</div>
+            <div class="menu-left-button">
+              Get Started
+            </div>
+          </div>
+        </div>
+        <div class="menu-right-side">
+          <div class="menu-btn menu-Home">Home</div>
+          <div class="menu-btn menu-Dashboard">Dashboard</div>
+          <div class="menu-btn menu-Features">Features</div>
+          <div class="menu-btn menu-About">About</div>
+          <div class="menu-btn menu-Contact">Contact</div>
+          <div class="menu-btn menu-Login">Login</div>
+          <div class="menu-btn menu-Register">Register</div>
         </div>
       </div>
     </header>
