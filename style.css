@@ -436,9 +436,9 @@ section{
   width: 550px;
   padding: 15px 10px;
   border-radius: 15px;
-  border: 1px solid #8080801a;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  background-color: #ffffff10;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
 
 
@@ -507,13 +507,16 @@ section{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(166, 187, 251, 0.8);
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 .why-card:hover{
-  box-shadow: 0 0 5px;
-  transform: scale(1.1, 1.1);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
 
 .why-card i {
@@ -521,6 +524,46 @@ section{
   color: #1d233e;
   margin-bottom: 0.8rem;
 }
+
+
+
+/* .features {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+} */
+
 
 
 
@@ -589,6 +632,15 @@ section{
   .why-card{
     width: 40%;
   }
+  .hero-title-box{
+    height: 130px;
+    width: 250px;
+    margin: 0px 250px;
+  }
+  .hero-image-box{
+    height: 300px;
+    width: 600px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -615,11 +667,17 @@ section{
   .login-card {
     width: 90%;
   }
-  .hero-title-box, .hero-image-box{
-    height: 150px;
-    width: 300px;
+  .hero-title-box{
+    height: 130px;
+    width: 250px;
+    margin: 0px 50px;
+  }
+
+  .hero-image-box{
+    height: 200px;
+    width: 400px;
   }
   .why-card{
-    width: 90%;
+    width: 95%;
   }
 }
