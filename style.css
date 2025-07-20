@@ -343,13 +343,13 @@
   background-color: #1d233e2a;
 }
 
-.register-checkbox{
+.register-checkbox {
   height: 15px;
   width: 15px;
   margin: 0px 5px 0px 10px;
 }
 
-.agree-checkbox{
+.agree-checkbox {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -358,19 +358,19 @@
   font-size: 0.87rem;
 }
 
-.register-signin{
+.register-signin {
   margin: 5px 0px 10px 10px;
   color: #2a3157;
   font-size: 0.87rem;
 }
 
-.register-signin a{
+.register-signin a {
   text-decoration: none;
   font-size: 0.87rem;
   font-style: italic;
 }
 
-.register-btn{
+.register-btn {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -392,30 +392,28 @@
   pointer-events: none;
 }
 
-
 /* main section */
 
-section{
+section {
   min-height: 100vh;
   width: 100%;
 }
 
-#home{
+#home {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
 }
 
-.hero-container{
+.hero-container {
   height: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   margin-top: 50px;
-
 }
 
 .hero-title-box {
@@ -427,7 +425,7 @@ section{
   width: 400px;
 }
 
-.hero-image-box{
+.hero-image-box {
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -438,9 +436,8 @@ section{
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
-
 
 .hero-title {
   height: 100%;
@@ -453,7 +450,7 @@ section{
   float: right;
 }
 
-.hero-image{
+.hero-image {
   height: 100%;
   width: 100%;
   border: none;
@@ -468,7 +465,6 @@ section{
   color: #1d233e;
   width: 100%;
   margin-top: 100px;
-
 }
 
 .why-container {
@@ -489,7 +485,7 @@ section{
   color: #333;
 }
 
-.why-card-wrapper{
+.why-card-wrapper {
   display: flex;
   gap: 2rem;
   justify-content: space-around;
@@ -498,7 +494,7 @@ section{
   flex-wrap: wrap;
 }
 
-.why-card{
+.why-card {
   padding: 20px;
   border-radius: 15px;
   border: none;
@@ -510,13 +506,13 @@ section{
   cursor: pointer;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
 }
 
-.why-card:hover{
+.why-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .why-card i {
@@ -525,7 +521,137 @@ section{
   margin-bottom: 0.8rem;
 }
 
+#contact {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.contact-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-left {
+  height: 400px;
+  width: 47%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px 15px;
+  gap: 0.5rem;
+}
+
+.contact-text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.first-para {
+  font-size: 1.7rem;
+  font-weight: 600;
+  width: 70%;
+  margin-bottom: 15px;
+  text-align: start;
+}
+
+.sec-para {
+  width: 70%;
+  font-size: 1.05rem;
+}
+
+.contact-details p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.contact-details div {
+  font-size: 0.9rem;
+}
+
+.contact-details {
+  margin-top: 10px;
+  width: 70%;
+}
+
+.contact-images {
+  width: 70%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.image1,
+.image2 {
+  height: 100%;
+  width: 30%;
+  background-color: red;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.contact-right {
+  width: 47%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.contact-form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 25px;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.contact-form input {
+  padding: 10px 8px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.contact-form textarea {
+  border: 1px solid gray;
+  padding: 5px 8px;
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.contact-form button {
+  border: none;
+  padding: 5px 8px;
+  background-color: gray;
+  opacity: 0.9;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
 
 /* .features {
   text-align: center;
@@ -564,21 +690,11 @@ section{
   transform: translateY(-5px);
 } */
 
-
-
-
-
-
-
-.footer-container{
+.footer-container {
   height: 200px;
   width: 100%;
-  background-color: #ebf4fb;
+  background-color: #a6bbfb;
 }
-
-
-
-
 
 @media only screen and (max-width: 1360px) and (min-width: 1024px) {
   .nav-first {
@@ -620,7 +736,7 @@ section{
   .logo-popup {
     top: 150px;
   }
-  .register-popup{
+  .register-popup {
     top: 150px;
   }
   .register-card {
@@ -629,17 +745,20 @@ section{
   .login-card {
     width: 40%;
   }
-  .why-card{
+  .why-card {
     width: 40%;
   }
-  .hero-title-box{
+  .hero-title-box {
     height: 130px;
     width: 250px;
     margin: 0px 250px;
   }
-  .hero-image-box{
+  .hero-image-box {
     height: 300px;
     width: 600px;
+  }
+  .contact-form {
+    padding: 20px 15px;
   }
 }
 
@@ -658,7 +777,8 @@ section{
   .hidden-menu {
     display: block;
   }
-  .login-popup, .register-popup {
+  .login-popup,
+  .register-popup {
     top: 60px;
   }
   .register-card {
@@ -667,17 +787,41 @@ section{
   .login-card {
     width: 90%;
   }
-  .hero-title-box{
+  .hero-title-box {
     height: 130px;
     width: 250px;
     margin: 0px 50px;
   }
 
-  .hero-image-box{
+  .hero-image-box {
     height: 200px;
     width: 400px;
   }
-  .why-card{
+  .why-card {
     width: 95%;
+  }
+
+  .contact-container {
+    flex-wrap: wrap;
+  }
+  .contact-right,
+  .contact-left {
+    width: 90%;
+    align-items: center;
+  }
+  .contact-form {
+    width: 90%;
+    padding: 20px 12px;
+  }
+  .contact-right {
+    margin-top: 30px;
+  }
+  .contact-text {
+    width: 100%;
+    align-items: center;
+  }
+  .contact-images {
+    width: 100%;
+    justify-content: center;
   }
 }
