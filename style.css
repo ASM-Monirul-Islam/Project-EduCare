@@ -402,8 +402,9 @@ section{
 
 #home{
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 }
 
 .hero-container{
@@ -437,6 +438,7 @@ section{
   border-radius: 15px;
   border: 1px solid #8080801a;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background-color: #ffffff10;
 }
 
 
@@ -459,6 +461,76 @@ section{
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#why-educare {
+  padding: 50px 20px;
+  color: #1d233e;
+  width: 100%;
+  margin-top: 100px;
+
+}
+
+.why-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.why-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.why-subtext {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.why-card-wrapper{
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.why-card{
+  padding: 20px;
+  border-radius: 15px;
+  border: none;
+  width: 25%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(166, 187, 251, 0.8);
+  cursor: pointer;
+}
+
+.why-card:hover{
+  box-shadow: 0 0 5px;
+  transform: scale(1.1, 1.1);
+}
+
+.why-card i {
+  font-size: 2rem;
+  color: #1d233e;
+  margin-bottom: 0.8rem;
+}
+
+
+
+
+
+
+.footer-container{
+  height: 200px;
+  width: 100%;
+  background-color: #ebf4fb;
 }
 
 
@@ -514,6 +586,9 @@ section{
   .login-card {
     width: 40%;
   }
+  .why-card{
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -543,5 +618,8 @@ section{
   .hero-title-box, .hero-image-box{
     height: 150px;
     width: 300px;
+  }
+  .why-card{
+    width: 90%;
   }
 }
