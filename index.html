@@ -31,8 +31,8 @@
         </div>
         <div class="nav-third nav-hidden">
           <ul>
-            <li id="nav-login">Login</li>
-            <li id="nav-register">Register</li>
+            <li id="nav-login" class="login">Login</li>
+            <li id="nav-register" class="register">Register</li>
           </ul>
         </div>
         <div class="menu hidden-menu">
@@ -46,19 +46,19 @@
           <div class="menu-left-text">
             <div class="para">Join EduCare and simplify your student life today - it’s free,
               fast, and designed for you</div>
-            <div class="menu-left-button">
+            <div class="menu-left-button login menu-close">
               Get Started
             </div>
           </div>
         </div>
         <div class="menu-right-side">
-          <div class="menu-btn menu-Home">Home</div>
-          <div class="menu-btn menu-Dashboard">Dashboard</div>
-          <div class="menu-btn menu-Features">Features</div>
-          <div class="menu-btn menu-About">About</div>
-          <div class="menu-btn menu-Contact">Contact</div>
-          <div class="menu-btn menu-Login">Login</div>
-          <div class="menu-btn menu-Register">Register</div>
+          <div class="menu-close menu-btn menu-Home">Home</div>
+          <div class="menu-close menu-btn menu-Dashboard">Dashboard</div>
+          <div class="menu-close menu-btn menu-Features">Features</div>
+          <div class="menu-close menu-btn menu-About">About</div>
+          <div class="menu-close menu-btn menu-Contact">Contact</div>
+          <div class="menu-close menu-btn menu-Login login">Login</div>
+          <div class="menu-close menu-btn menu-Register register">Register</div>
         </div>
       </div>
     </header>
@@ -74,11 +74,11 @@
           <input type="password" id="password">
           <div class="login-forgot-pass">
             <a href="#">Forgot Password?</a>
-            <p>New to Educare? <a href="#" id="login-register">Sign up</a></p>
+            <p>New to Educare? <a href="#" id="login-register" class="register login-close">Sign up</a></p>
           </div>
           <div class="login-card-btn">
             <button id="login-submit">Login</button>
-            <button id="login-close">Close</button>
+            <button id="login-close" class="login-close">Close</button>
           </div>
         </div>
       </div>
@@ -102,18 +102,18 @@
             <input type="checkbox" required class="register-checkbox">I agree to the terms and conditions
           </div>
           <div class="register-signin">
-            Already have account? <a href="#" id="register-login">Login</a>
+            Already have account? <a href="#" id="register-login" class="login register-close">Login</a>
           </div>
           <div class="register-btn">
             <button id="register-submit">Register</button>
-            <button id="register-close">Close</button>
+            <button id="register-close" class="register-close">Close</button>
           </div>
         </div>
        </div>
        <!-- Register pop up ends here -------------->
 
 
-       
+
     </main>
 
     <script src="script.js"></script>

@@ -2,74 +2,114 @@ const menu = document.querySelector(".menu");
 const menuCard = document.querySelector(".menu-bg");
 
 menu.addEventListener("click", ()=>{
-	menuCard.classList.toggle("menu-card-hidden")
+	menuCard.classList.toggle("menu-card-hidden");
+})
+
+const menuClose = document.querySelectorAll(".menu-close");
+
+menuClose.forEach(e=>{
+	e.addEventListener("click", ()=>{
+		menuCard.classList.toggle("menu-card-hidden");
+	})
 })
 
 
 // Login Pop Up Menu...
 
-const navLogin = document.querySelector("#nav-login");
-const menuLogin = document.querySelector(".menu-Login");
-const getStarted = document.querySelector(".menu-left-button");
+const login = document.querySelectorAll(".login");
 const loginPop = document.querySelector(".login-popup");
-const regiLogin = document.querySelector("#register-login");
+const loginClose = document.querySelectorAll(".login-close");
 
-	
-let login = {
-	l1 : navLogin,
-	l2 : menuLogin,
-	l3 : getStarted,
-	l4: regiLogin
-}
-
-for(const key in login) {
-	login[key].addEventListener("click", ()=>{
+login.forEach(e=>{
+	e.addEventListener("click", ()=>{
 		loginPop.classList.toggle("login-panel-hidden");
 	})
-}
-
-const loginClose = document.querySelector("#login-close");
-const loginClose2 = document.querySelector("#login-register");
-
-loginClose.addEventListener("click", ()=>{
-	loginPop.classList.toggle("login-panel-hidden");
 })
 
-loginClose2.addEventListener("click", ()=>{
-	loginPop.classList.toggle("login-panel-hidden");
+loginClose.forEach(e=>{
+	e.addEventListener("click", ()=>{
+		loginPop.classList.toggle("login-panel-hidden");
+	})
 })
+
+const register = document.querySelectorAll(".register");
+const registerClose = document.querySelectorAll(".register-close");
+const registerPopup = document.querySelector(".register-popup");
+
+register.forEach(e=> {
+	e.addEventListener("click", ()=>{
+		registerPopup.classList.toggle("register-panel-hidden");
+	})
+})
+
+registerClose.forEach(e=> {
+	e.addEventListener("click", ()=>{
+		registerPopup.classList.toggle("register-panel-hidden");
+	})
+})
+
+// const navLogin = document.querySelector("#nav-login");
+// const menuLogin = document.querySelector(".menu-Login");
+// const getStarted = document.querySelector(".menu-left-button");
+// const loginPop = document.querySelector(".login-popup");
+// const regiLogin = document.querySelector("#register-login");
+
+	
+// let login = {
+// 	l1 : navLogin,
+// 	l2 : menuLogin,
+// 	l3 : getStarted,
+// 	l4: regiLogin
+// }
+
+// for(const key in login) {
+// 	login[key].addEventListener("click", ()=>{
+// 		loginPop.classList.toggle("login-panel-hidden");
+// 	})
+// }
+
+// const loginClose = document.querySelector("#login-close");
+// const loginClose2 = document.querySelector("#login-register");
+
+// loginClose.addEventListener("click", ()=>{
+// 	loginPop.classList.toggle("login-panel-hidden");
+// })
+
+// loginClose2.addEventListener("click", ()=>{
+// 	loginPop.classList.toggle("login-panel-hidden");
+// })
 
 // Register button
 
-const registerPopup = document.querySelector(".register-popup");
+// const registerPopup = document.querySelector(".register-popup");
 
-const navRegister = document.querySelector("#nav-register");
-const menuRegister =  document.querySelector(".menu-Register");
-const loginRegister = document.querySelector("#login-register");
+// const navRegister = document.querySelector("#nav-register");
+// const menuRegister =  document.querySelector(".menu-Register");
+// const loginRegister = document.querySelector("#login-register");
 
-let register = {
-	r1 : navRegister,
-	r2 : menuRegister,
-	r3 : loginRegister
-};
+// let register = {
+// 	r1 : navRegister,
+// 	r2 : menuRegister,
+// 	r3 : loginRegister
+// };
 
-for(const key in register) {
-	register[key].addEventListener("click", ()=> {
-		registerPopup.classList.toggle("register-panel-hidden");
-	})
-}
+// for(const key in register) {
+// 	register[key].addEventListener("click", ()=> {
+// 		registerPopup.classList.toggle("register-panel-hidden");
+// 	})
+// }
 
 
-const registerClose1 = document.querySelector("#register-close");
-const registerClose2 = document.querySelector("#register-login");
+// const registerClose1 = document.querySelector("#register-close");
+// const registerClose2 = document.querySelector("#register-login");
 
-let registerClose = {
-	rc1 : registerClose1,
-	rc2 : registerClose2
-}
+// let registerClose = {
+// 	rc1 : registerClose1,
+// 	rc2 : registerClose2
+// }
 
-for(const key in registerClose) {
-	registerClose[key].addEventListener("click", ()=>{
-		registerPopup.classList.toggle("register-panel-hidden");
-	})
-}
+// for(const key in registerClose) {
+// 	registerClose[key].addEventListener("click", ()=>{
+// 		registerPopup.classList.toggle("register-panel-hidden");
+// 	})
+// }
