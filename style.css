@@ -211,6 +211,94 @@
   transition: 0.5s ease;
 }
 
+/* Login - Popup  */
+.login-popup{
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+
+.login-card{
+  height: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  gap: 0.4rem;
+  box-shadow: 0 0 10px;
+}
+
+.login-title{
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-family: 'Times New Roman';
+}
+
+#email, #password{
+  padding: 15px 5px;
+  margin: 3px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1d233e2a;
+}
+
+.login-forgot-pass {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 7px;
+  margin-top: 8px;
+}
+
+.login-forgot-pass p{
+  font-size: 0.75rem;
+}
+
+.login-forgot-pass a {
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+.login-card-btn{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px 5px;
+  margin-top: 15px;
+}
+
+#login-submit, #login-close {
+  padding: 8px 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: #1d233e3a;
+  box-shadow: 0 0 4px #1d233e2a;
+  cursor: pointer;
+}
+
+.login-panel-hidden{
+  opacity: 0; 
+   transform: translateY(-1000px);
+  pointer-events: none;
+  transition: transform 0.4s ease;
+}
+
+
+
+
+
+
 
 @media only screen and (max-width: 1360px) and (min-width: 1024px) {
   .nav-first {
@@ -230,7 +318,7 @@
     height: 150px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2fr, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
@@ -247,6 +335,10 @@
     grid-area: 2 / 1 / 3 / 6;
     width: 100%;
     justify-self: center;
+    border-top: 2px solid #8080803a;
+  }
+  .logo-popup{
+    top: 150px;
   }
 }
 
@@ -264,6 +356,9 @@
   }
   .hidden-menu{
     display: block;
+  }
+  .login-popup{
+    top: 60px;
   }
 }
 
