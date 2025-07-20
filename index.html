@@ -22,11 +22,11 @@
         </div>
         <div class="nav-second nav-hidden">
           <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="nav-third nav-hidden">
@@ -44,19 +44,29 @@
       <div class="menu-bg menu-card-hidden">
         <div class="menu-left-side">
           <div class="menu-left-text">
-            <div class="para">Join EduCare and simplify your student life today - it’s free,
-              fast, and designed for you</div>
-            <div class="menu-left-button login menu-close">
-              Get Started
+            <div class="para">
+              Join EduCare and simplify your student life today - it’s free,
+              fast, and designed for you
             </div>
+            <div class="menu-left-button login menu-close">Get Started</div>
           </div>
         </div>
         <div class="menu-right-side">
-          <div class="menu-close menu-btn menu-Home">Home</div>
-          <div class="menu-close menu-btn menu-Dashboard">Dashboard</div>
-          <div class="menu-close menu-btn menu-Features">Features</div>
-          <div class="menu-close menu-btn menu-About">About</div>
-          <div class="menu-close menu-btn menu-Contact">Contact</div>
+          <a class="menu-close menu-btn menu-Home" href="#home"
+            ><div>Home</div></a
+          >
+          <a class="menu-close menu-btn menu-Dashboard" href="#"
+            ><div>Dashboard</div></a
+          >
+          <a class="menu-close menu-btn menu-Features" href="#features"
+            ><div>Features</div></a
+          >
+          <a class="menu-close menu-btn menu-About" href="#about"
+            ><div>About</div></a
+          >
+          <a class="menu-close menu-btn menu-Contact" href="#contact"
+            ><div>Contact</div></a
+          >
           <div class="menu-close menu-btn menu-Login login">Login</div>
           <div class="menu-close menu-btn menu-Register register">Register</div>
         </div>
@@ -69,12 +79,17 @@
         <div class="login-card">
           <div class="login-title">EduCare - Login</div>
           <label>Email: </label>
-          <input type="email" id="email">
+          <input type="email" id="email" />
           <label>Password: </label>
-          <input type="password" id="password">
+          <input type="password" id="password" />
           <div class="login-forgot-pass">
             <a href="#">Forgot Password?</a>
-            <p>New to Educare? <a href="#" id="login-register" class="register login-close">Sign up</a></p>
+            <p>
+              New to Educare?
+              <a href="#" id="login-register" class="register login-close"
+                >Sign up</a
+              >
+            </p>
           </div>
           <div class="login-card-btn">
             <button id="login-submit">Login</button>
@@ -85,36 +100,51 @@
       <!-- Login Pop Up Menu Ends here ------------>
 
       <!-- Registration Menu Starts here ---------->
-       <div class="register-popup register-panel-hidden">
+      <div class="register-popup register-panel-hidden">
         <div class="register-card">
-          <div class="register-title">
-            EduCare - Register
-          </div>
+          <div class="register-title">EduCare - Register</div>
           <label>Name:</label>
-          <input type="text" id="register-name" class="register-input">
+          <input type="text" id="register-name" class="register-input" />
           <label>Email:</label>
-          <input type="email" id="register-email" class="register-input">
+          <input type="email" id="register-email" class="register-input" />
           <label for="pass">Password:</label>
-          <input type="password" id="register-pass" class="register-input">
+          <input type="password" id="register-pass" class="register-input" />
           <label for="confirm-pass">Confirm Password:</label>
-          <input type="password" id="confirm-pass" class="register-input">
+          <input type="password" id="confirm-pass" class="register-input" />
           <div class="agree-checkbox">
-            <input type="checkbox" required class="register-checkbox">I agree to the terms and conditions
+            <input type="checkbox" required class="register-checkbox" />I agree
+            to the terms and conditions
           </div>
           <div class="register-signin">
-            Already have account? <a href="#" id="register-login" class="login register-close">Login</a>
+            Already have account?
+            <a href="#" id="register-login" class="login register-close"
+              >Login</a
+            >
           </div>
           <div class="register-btn">
             <button id="register-submit">Register</button>
             <button id="register-close" class="register-close">Close</button>
           </div>
         </div>
-       </div>
-       <!-- Register pop up ends here -------------->
+      </div>
+      <!-- Register pop up ends here -------------->
 
-
-
+      <!-- Section starts from here --------------->
+      <section id="home">
+        <div class="hero-container">
+          <div class="hero-title-box">
+            <div class="hero-title"></div>
+          </div>
+          <div class="hero-image-box">
+            <div class="hero-image"></div>
+          </div>
+        </div>
+      </section>
+      <section id="features"></section>
+      <section id="about"></section>
+      <section id="contact"></section>
     </main>
+    <footer></footer>
 
     <script src="script.js"></script>
   </body>

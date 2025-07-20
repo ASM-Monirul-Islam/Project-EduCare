@@ -15,6 +15,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 999999999;
 }
 
 .nav-first,
@@ -178,9 +179,6 @@
   border: none;
   box-shadow: 0 0 1px;
   border-top: none;
-  position: absolute;
-  top: 61;
-  right: 0;
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -196,6 +194,8 @@
   text-align: center;
   width: 100%;
   cursor: pointer;
+  color: black;
+  text-decoration: none;
 }
 
 .menu-btn:hover {
@@ -205,8 +205,9 @@
 }
 
 .menu-card-hidden {
+  position: absolute;
   opacity: 0;
-  transform: translateX(1000px);
+  transform: translateY(-1000px);
   pointer-events: none;
   transition: 0.5s ease;
 }
@@ -392,6 +393,75 @@
 }
 
 
+/* main section */
+
+section{
+  min-height: 100vh;
+  width: 100%;
+}
+
+#home{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-container{
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap:wrap;
+  margin-top: 50px;
+
+}
+
+.hero-title-box {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 400px;
+}
+
+.hero-image-box{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 550px;
+  padding: 15px 10px;
+  border-radius: 15px;
+  border: 1px solid #8080801a;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.hero-title {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-image: url("EduCaretitle.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: right;
+}
+
+.hero-image{
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-image: url("HeroImage_png\ file.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 
 
 
@@ -469,5 +539,9 @@
   }
   .login-card {
     width: 90%;
+  }
+  .hero-title-box, .hero-image-box{
+    height: 150px;
+    width: 300px;
   }
 }
