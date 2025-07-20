@@ -116,7 +116,7 @@
 }
 
 .menu-bg, .menu-right-side{
-  min-height: 40vh;
+  min-height: 30vh;
 }
 
 .menu-bg{
@@ -205,9 +205,9 @@
 }
 
 .menu-card-hidden{
-  /* opacity: 0; */
-  /* transform: translateX(1000px); */
-  /* pointer-events: none; */
+  opacity: 0;
+  transform: translateX(1000px);
+  pointer-events: none;
   transition: 0.5s ease;
 }
 
