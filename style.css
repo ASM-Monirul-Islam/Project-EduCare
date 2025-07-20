@@ -106,20 +106,21 @@
 
 .hidden-menu {
   display: none;
-  font-size: 0.857  rem;
+  font-size: 0.857 rem;
   cursor: pointer;
   margin-right: 20px;
 }
 
-.hidden-menu i:hover{
+.hidden-menu i:hover {
   transform: scale(1.1, 1.1);
 }
 
-.menu-bg, .menu-right-side{
+.menu-bg,
+.menu-right-side {
   min-height: 30vh;
 }
 
-.menu-bg{
+.menu-bg {
   width: 100%;
   padding: 3px 0px;
   position: relative;
@@ -132,7 +133,7 @@
   pointer-events: auto;
 }
 
-.menu-left-side{
+.menu-left-side {
   height: auto;
   width: 70%;
   display: flex;
@@ -142,21 +143,20 @@
   gap: 0.5rem;
 }
 
-.menu-left-text{
+.menu-left-text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
   padding: 10px;
-
 }
 
-.menu-left-side .para{
+.menu-left-side .para {
   color: #1d233e;
 }
 
-.menu-left-button{
+.menu-left-button {
   padding: 10px 25px;
   justify-self: center;
   border: 2px solid rgba(206, 206, 206, 0.5);
@@ -166,13 +166,13 @@
   cursor: pointer;
 }
 
-.menu-left-button:hover{
+.menu-left-button:hover {
   background-color: rgba(255, 255, 255, 0.9);
   color: #1d233e;
   box-shadow: 0 0 6px #1d233e;
 }
 
-.menu-right-side{
+.menu-right-side {
   background-color: rgba(255, 255, 255, 0.8);
   width: 30%;
   border: none;
@@ -190,7 +190,7 @@
   padding: 2px;
 }
 
-.menu-btn{
+.menu-btn {
   border: 1px solid gray;
   padding: 7px;
   text-align: center;
@@ -198,13 +198,13 @@
   cursor: pointer;
 }
 
-.menu-btn:hover{
+.menu-btn:hover {
   background-color: rgba(31, 141, 250, 0.2);
   color: black;
   transform: scale(0.9, 0.9);
 }
 
-.menu-card-hidden{
+.menu-card-hidden {
   opacity: 0;
   transform: translateX(1000px);
   pointer-events: none;
@@ -212,7 +212,7 @@
 }
 
 /* Login - Popup  */
-.login-popup{
+.login-popup {
   min-height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -224,7 +224,7 @@
   padding-top: 80px;
 }
 
-.login-card{
+.login-card {
   height: auto;
   width: 30%;
   display: flex;
@@ -235,17 +235,19 @@
   border-radius: 10px;
   gap: 0.4rem;
   box-shadow: 0 0 10px;
+  z-index: 10000;
 }
 
-.login-title{
+.login-title {
   text-align: center;
   margin: 10px 0px;
   font-size: 1.4rem;
   font-weight: 900;
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
 }
 
-#email, #password{
+#email,
+#password {
   padding: 15px 5px;
   margin: 3px;
   border: none;
@@ -261,16 +263,17 @@
   margin-top: 8px;
 }
 
-.login-forgot-pass p{
+.login-forgot-pass p {
   font-size: 0.75rem;
 }
 
 .login-forgot-pass a {
   text-decoration: none;
   font-size: 0.75rem;
+  font-style: italic;
 }
 
-.login-card-btn{
+.login-card-btn {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -278,7 +281,8 @@
   margin-top: 15px;
 }
 
-#login-submit, #login-close {
+#login-submit,
+#login-close {
   padding: 8px 30px;
   border-radius: 15px;
   border: none;
@@ -287,14 +291,105 @@
   cursor: pointer;
 }
 
-.login-panel-hidden{
-  opacity: 0; 
-   transform: translateY(-1000px);
+.login-panel-hidden {
+  opacity: 0;
+  transform: translateY(-1000px);
   pointer-events: none;
-  transition: transform 0.4s ease;
+  transition: transform 0.3s ease;
 }
 
+/* Register menu */
 
+.register-popup {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+
+.register-card {
+  height: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  gap: 0.4rem;
+  box-shadow: 0 0 10px;
+  z-index: 10000;
+}
+
+.register-title {
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-family: "Times New Roman";
+}
+
+.register-input {
+  padding: 15px 5px;
+  margin: 3px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1d233e2a;
+}
+
+.register-checkbox{
+  height: 15px;
+  width: 15px;
+  margin: 0px 5px 0px 10px;
+}
+
+.agree-checkbox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  color: #2a3157;
+  font-size: 0.87rem;
+}
+
+.register-signin{
+  margin: 5px 0px 10px 10px;
+  color: #2a3157;
+  font-size: 0.87rem;
+}
+
+.register-signin a{
+  text-decoration: none;
+  font-size: 0.87rem;
+  font-style: italic;
+}
+
+.register-btn{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.register-btn button {
+  padding: 8px 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: #1d233e3a;
+  box-shadow: 0 0 4px #1d233e2a;
+  cursor: pointer;
+}
+
+.register-panel-hidden {
+  opacity: 0;
+  transform: translateY(-1000px);
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
 
 
 
@@ -337,8 +432,17 @@
     justify-self: center;
     border-top: 2px solid #8080803a;
   }
-  .logo-popup{
+  .logo-popup {
     top: 150px;
+  }
+  .register-popup{
+    top: 150px;
+  }
+  .register-card {
+    width: 40%;
+  }
+  .login-card {
+    width: 40%;
   }
 }
 
@@ -346,19 +450,24 @@
   .nav-hidden {
     display: none;
   }
-  .nav-bar{
+  .nav-bar {
     height: 60px;
     display: flex;
     justify-content: space-between;
   }
-  .logo{
+  .logo {
     width: 100px;
   }
-  .hidden-menu{
+  .hidden-menu {
     display: block;
   }
-  .login-popup{
+  .login-popup, .register-popup {
     top: 60px;
   }
+  .register-card {
+    width: 90%;
+  }
+  .login-card {
+    width: 90%;
+  }
 }
-

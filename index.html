@@ -63,7 +63,58 @@
       </div>
     </header>
     <!-- Main Body ----------------------------->
-    <main></main>
+    <main>
+      <!-- This is a login pop up menu --------->
+      <div class="login-popup login-panel-hidden">
+        <div class="login-card">
+          <div class="login-title">EduCare - Login</div>
+          <label>Email: </label>
+          <input type="email" id="email">
+          <label>Password: </label>
+          <input type="password" id="password">
+          <div class="login-forgot-pass">
+            <a href="#">Forgot Password?</a>
+            <p>New to Educare? <a href="#" id="login-register">Sign up</a></p>
+          </div>
+          <div class="login-card-btn">
+            <button id="login-submit">Login</button>
+            <button id="login-close">Close</button>
+          </div>
+        </div>
+      </div>
+      <!-- Login Pop Up Menu Ends here ------------>
+
+      <!-- Registration Menu Starts here ---------->
+       <div class="register-popup register-panel-hidden">
+        <div class="register-card">
+          <div class="register-title">
+            EduCare - Register
+          </div>
+          <label>Name:</label>
+          <input type="text" id="register-name" class="register-input">
+          <label>Email:</label>
+          <input type="email" id="register-email" class="register-input">
+          <label for="pass">Password:</label>
+          <input type="password" id="register-pass" class="register-input">
+          <label for="confirm-pass">Confirm Password:</label>
+          <input type="password" id="confirm-pass" class="register-input">
+          <div class="agree-checkbox">
+            <input type="checkbox" required class="register-checkbox">I agree to the terms and conditions
+          </div>
+          <div class="register-signin">
+            Already have account? <a href="#" id="register-login">Login</a>
+          </div>
+          <div class="register-btn">
+            <button id="register-submit">Register</button>
+            <button id="register-close">Close</button>
+          </div>
+        </div>
+       </div>
+       <!-- Register pop up ends here -------------->
+
+
+       
+    </main>
 
     <script src="script.js"></script>
   </body>
