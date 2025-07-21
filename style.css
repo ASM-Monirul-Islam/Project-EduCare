@@ -214,11 +214,11 @@
 
 /* Login - Popup  */
 .login-popup {
-  min-height: 100vh;
+  min-height: 1000vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 80px;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -302,11 +302,11 @@
 /* Register menu */
 
 .register-popup {
-  min-height: 100vh;
+  min-height: 1000vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 80px;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -1037,12 +1037,6 @@ section {
     justify-self: center;
     border-top: 2px solid #8080803a;
   }
-  .logo-popup {
-    top: 150px;
-  }
-  .register-popup {
-    top: 150px;
-  }
   .register-card {
     width: 40%;
   }
@@ -1101,10 +1095,7 @@ section {
   .hidden-menu {
     display: block;
   }
-  .login-popup,
-  .register-popup {
-    top: 60px;
-  }
+
   .register-card {
     width: 90%;
   }
