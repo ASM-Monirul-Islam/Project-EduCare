@@ -130,7 +130,7 @@ html {
 .menu-bg {
   width: 100%;
   padding: 3px 0px;
-  position: absolute;
+  position: fixed;
   top: 60px;
   background-color: white;
   border-bottom: 2px solid rgba(0, 0, 0, 0.08);
@@ -222,14 +222,14 @@ html {
 
 /* Login - Popup  */
 .login-popup {
-  min-height: 550vh;
+  min-height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
+  position: fixed;
   top: 0px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding-top: 80px;
   z-index: 100;
 }
@@ -311,14 +311,14 @@ html {
 /* Register menu */
 
 .register-popup {
-  min-height: 550vh;
+  min-height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
+  position: fixed;
   top: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding-top: 80px;
   z-index: 100;
 }
