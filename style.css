@@ -1047,12 +1047,6 @@ section {
   .nav-btn {
     display: none;
   }
-  .nav-name {
-    width: 80%;
-  }
-  .nav-name p {
-    font-size: 1.7rem;
-  }
   .nav-menu {
     display: flex;
   }
@@ -1061,8 +1055,10 @@ section {
   }
   .nav-container {
     height: 80px;
+    display: flex;
     align-items: center;
     background-color: #cce7fc;
+    padding-top: 15px;
   }
   .about-text p {
     width: 100%;
