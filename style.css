@@ -5,220 +5,169 @@
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  /* transition: all 0.3s; */
 }
 
 html {
   scroll-padding-top: 80px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav-bar {
-  position: fixed;
-  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 80px;
   width: 100%;
-  background-color: #ebf4fb;
+  background-color: #cce7fc;
+  position: fixed;
+  z-index: 9999;
+}
+
+.nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 999999999;
+  width: 100%;
 }
 
-.nav-first,
-.nav-second,
-.nav-third {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
+/* Nav Button */
 
-.logo {
-  height: 100%;
+.nav-logo {
+  height: 100px;
   width: 140px;
-  border: none;
-  margin-left: 20px;
-  background-image: url("EduCareDark.png");
+  background-image: url("images/EduCareDark.png");
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  
 }
 
-.nav-first {
-  width: 50%;
-  justify-content: flex-start;
-  padding: 10px 0px 0px 0px;
-}
-
-.nav-second {
-  width: 35%;
-  justify-content: center;
-}
-
-.nav-second ul {
-  list-style: none;
+.nav-btn {
   display: flex;
-  gap: 0.5rem;
-}
-
-.nav-second ul a {
-  font-size: 1.1rem;
-  border: none;
-  border-radius: 15px;
-  padding: 6px 13px;
-  text-decoration: none;
-  color: #1d233e;
-  cursor: pointer;
-}
-
-.nav-second ul li a:hover {
-  box-shadow: 0 0 8px rgba(0, 128, 255, 0.3);
-  background-color: rgba(31, 141, 250, 0.2);
-  color: black;
-}
-
-.nav-third {
-  width: 15%;
-  padding-right: 20px;
+  align-items: center;
   justify-content: flex-end;
+  height: 100%;
+  width: 50%;
 }
 
-.nav-third ul {
-  display: flex;
-  gap: 0.5rem;
-}
-
-#nav-login,
-#nav-register {
-  list-style: none;
-  cursor: pointer;
-  font-size: 1.1rem;
-  padding: 8px 15px;
-  font-weight: 540;
-  border: none;
-  border-radius: 15px;
-  background-color: #1d233e2a;
-}
-
-#nav-login:hover,
-#nav-register:hover {
-  box-shadow: 0 0 10px rgba(246, 62, 62, 0.3);
-  background-color: rgba(246, 62, 62, 0.99);
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.nav-second ul li:hover {
-  transform: scale(1.05, 1.05);
-  border: none;
-}
-
-.hidden-menu {
-  display: none;
-  font-size: 0.857 rem;
-  cursor: pointer;
-  margin-right: 20px;
-}
-
-.hidden-menu i:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.menu-bg,
-.menu-right-side {
-  min-height: 30vh;
-}
-
-.menu-bg {
+.nav-btn ul {
   width: 100%;
-  padding: 3px 0px;
-  position: fixed;
-  top: 60px;
-  background-color: white;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-  z-index: 100;
+  list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  pointer-events: auto;
-}
-
-.menu-left-side {
-  height: auto;
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
   gap: 0.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
 }
 
-.menu-left-text {
+.nav-btn ul li {
+  border: none;
+  padding: 7px 10px;
+  border-radius: 10px;
+}
+
+.nav-btn ul li:hover {
+  box-shadow: 0 0 8px rgba(0, 128, 255, 0.3);
+  background-color: rgba(27, 126, 224, 0.2);
+  transition: 0.3s ease-out;
+}
+
+.nav-btn ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 1.076rem;
+}
+
+/* Theme Changer */
+
+.theme-changer {
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  margin: 0px 15px 0px 10px;
+  cursor: pointer;
+}
+
+.theme-changer i {
+  font-size: 1.3rem;
   padding: 10px;
 }
 
-.menu-left-side .para {
-  color: #1d233e;
-}
+/* Hidden menu */
 
-.menu-left-button {
-  padding: 10px 25px;
-  justify-self: center;
-  border: 2px solid rgba(206, 206, 206, 0.5);
-  border-radius: 50px;
-  color: white;
-  background-color: #1d233e;
+.nav-menu {
+  height: 100%;
+  display: none;
+  align-items: center;
+  position: absolute;
+  right: 20px;
   cursor: pointer;
 }
 
-.menu-left-button:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #1d233e;
-  box-shadow: 0 0 6px #1d233e;
+.nav-menu i {
+  font-size: 1.8rem;
 }
 
-.menu-right-side {
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 30%;
-  border: none;
-  box-shadow: 0 0 1px;
-  border-top: none;
-  z-index: 1000;
+.nav-bar-hidden {
+  min-height: fit-content;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #badff9;
+}
+
+/* Menu Button */
+
+.menu-bar {
+  width: 100%;
+  padding: 10px 10px 10px 0px;
+}
+
+.menu-bar ul {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: 0.2rem;
-  padding: 2px;
+  list-style: none;
 }
 
-.menu-btn {
-  border: 1px solid gray;
-  padding: 7px;
+#menu-btn {
+  margin: 5px;
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(0, 128, 255, 0.3);
+  background-color: rgba(27, 126, 224, 0.2);
+  cursor: pointer;
+}
+
+#menu-btn:hover {
+  background-color: rgba(27, 126, 224, 0.5);
+  box-shadow: 0 0 8px rgba(0, 128, 255, 0.5);
+  transition: 0.2s ease;
+  transform: scale(0.95, 0.95);
+}
+
+#menu-btn a {
   text-align: center;
   width: 100%;
-  cursor: pointer;
-  color: black;
+  padding: 10px;
   text-decoration: none;
-}
-
-.menu-btn:hover {
-  background-color: rgba(31, 141, 250, 0.2);
   color: black;
-  transform: scale(0.9, 0.9);
+  font-size: 1.1rem;
 }
 
-.menu-card-hidden {
-  position: absolute;
-  opacity: 0;
-  transform: translateY(-1000px);
-  pointer-events: none;
-  transition: 0.5s ease;
+.hidden-menu-bar {
+  display: none;
 }
+
+/* Main body CSS starts here */
+
+
+
+/* EduCare */
 
 /* Login - Popup  */
 .login-popup {
@@ -302,10 +251,8 @@ html {
 }
 
 .login-panel-hidden {
-  opacity: 0;
-  transform: translateY(-1000px);
-  pointer-events: none;
-  transition: transform 0.3s ease;
+  display: none;
+  transition: 0.5s ease;
 }
 
 /* Register menu */
@@ -396,12 +343,12 @@ html {
 }
 
 .register-panel-hidden {
-  opacity: 0;
-  transform: translateY(-1000px);
-  pointer-events: none;
+  display: none;
 }
 
-/* main section */
+.register, .login {
+  cursor: pointer;
+}
 
 section {
   min-height: 100vh;
@@ -453,7 +400,7 @@ section {
   height: 100%;
   width: 100%;
   border: none;
-  background-image: url("EduCaretitle.png");
+  background-image: url("images/EduCaretitle.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -464,7 +411,7 @@ section {
   height: 100%;
   width: 100%;
   border: none;
-  background-image: url("HeroImage_png\ file.png");
+  background-image: url("images/HeroImage_png\ file.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -638,7 +585,7 @@ section {
   width: 100%;
   max-width: 400px;
   height: 300px;
-  background-image: url("your-image.png"); /* Replace this */
+  background-image: url("images/your-image.png"); /* Replace this */
   background-size: cover;
   background-position: center;
   border-radius: 20px;
@@ -735,11 +682,11 @@ section {
 }
 
 .image1 {
-  background-image: url("Monirul.jpg");
+  background-image: url("images/Monirul.jpg");
 }
 
 .image2 {
-  background-image: url("Hafiza.JPG");
+  background-image: url("images/Hafiza.JPG");
 }
 
 .contact-right {
@@ -889,35 +836,35 @@ section {
 }
 
 .dashboard-image {
-  background-image: url("Dashboard.jpg");
+  background-image: url("images/Dashboard.jpg");
 }
 
 .task-manager-image {
-  background-image: url("Task\ manager.jpg");
+  background-image: url("images/Task\ manager.jpg");
 }
 
 .study-planner-image {
-  background-image: url("Study\ Planner.jpg");
+  background-image: url("images/Study\ Planner.jpg");
 }
 
 .budget-planner-image {
-  background-image: url("Budget\ Planner\ 2.jpg");
+  background-image: url("images/Budget\ Planner\ 2.jpg");
 }
 
 .resume-builder-image {
-  background-image: url("Resume\ builder.jpg");
+  background-image: url("images/Resume\ builder.jpg");
 }
 
 .scholarship-finder-image {
-  background-image: url("Scholarship\ finder.jpg");
+  background-image: url("images/Scholarship\ finder.jpg");
 }
 
 .gpa-calc-image {
-  background-image: url("GPA\ Calculator.jpg");
+  background-image: url("images/GPA\ Calculator.jpg");
 }
 
 .dictionary-image {
-  background-image: url("DIctionary.jpg");
+  background-image: url("images/DIctionary.jpg");
 }
 
 .feature-btn:hover {
@@ -952,7 +899,7 @@ section {
 .footer-logo {
   height: 100px;
   width: 150px;
-  background-image: url("EduCare-Black.png");
+  background-image: url("images/EduCare-Black.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -999,17 +946,9 @@ section {
   font-size: 0.9rem;
 }
 
+/* Media queries CSS for responsiveness */
+
 @media only screen and (max-width: 1360px) {
-  .nav-first {
-    width: 40%;
-  }
-  .nav-second {
-    width: 40%;
-    justify-content: flex-end;
-  }
-  .nav-third {
-    width: 20%;
-  }
   .footer-btn button {
     transform: scale(0.9, 0.9);
   }
@@ -1024,36 +963,6 @@ section {
 }
 
 @media only screen and (max-width: 1023px) {
-  html {
-    scroll-padding-top: 150px;
-  }
-  #home {
-    padding-top: 150px;
-  }
-  .nav-bar {
-    height: 150px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2fr, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-  }
-  .logo {
-    grid-area: 1 / 1 / 2 / 3;
-    height: 100%;
-    width: 250px;
-  }
-  .nav-third {
-    grid-area: 1 / 5 / 2 / 6;
-    justify-self: end;
-  }
-  .nav-second {
-    grid-area: 2 / 1 / 3 / 6;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    border-top: 2px solid #8080803a;
-  }
   .register-card {
     width: 40%;
   }
@@ -1094,23 +1003,75 @@ section {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
+  html {
+    scroll-padding-top: 150px;
+  }
+
+  #home {
+    padding: 150px 10px 10px 10px;
+  }
+  .nav-bar {
+    height: 150px;
+  }
+  .nav-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 50px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+  }
+  .nav-logo {
+    grid-area: 1 / 1 / 2 / 6;
+    margin-left: 0px;
+  }
+  .nav-btn {
+    grid-area: 2 / 1 / 3 / 6;
+  }
+  .nav-btn,
+  .nav-logo {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-btn ul {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+  .nav-name {
+    width: 80%;
+  }
+  .nav-name p {
+    font-size: 1.7rem;
+  }
+  .nav-menu {
+    display: flex;
+  }
+  .theme-changer {
+    display: none;
+  }
+  .nav-container {
+    height: 80px;
+    align-items: center;
+    background-color: #cce7fc;
+  }
   .about-text p {
     width: 100%;
   }
-  .nav-hidden {
-    display: none;
-  }
-  .nav-bar {
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-  }
   #home {
-    padding-top: 60px;
+    padding-top: 80px;
   }
   html {
-    scroll-padding-top: 60px;
+    scroll-padding-top: 80px;
   }
   .logo {
     width: 100px;
@@ -1203,5 +1164,35 @@ section {
   .card-image {
     height: 60%;
     width: 100%;
+  }
+
+  .home-right-list ul {
+    gap: 0.7rem;
+    list-style: none;
+  }
+
+  .home-right-list ul li {
+    text-align: center;
+  }
+
+  .home-right-subtext {
+    width: 100%;
+  }
+
+  .home-image {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .nav-btn {
+    display: none;
+  }
+  .nav-name {
+    width: 90%;
+  }
+  .nav-name p {
+    font-size: 1.4rem;
   }
 }

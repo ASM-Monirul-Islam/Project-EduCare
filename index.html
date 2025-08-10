@@ -12,70 +12,80 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
   </head>
   <body>
-    <!-- NavBar HTML --------------------------->
     <header>
-      <div class="nav-bar">
-        <div class="nav-first">
-          <div class="logo"></div>
-        </div>
-        <div class="nav-second nav-hidden">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="nav-third nav-hidden">
-          <ul>
-            <li id="nav-login" class="login">Login</li>
-            <li id="nav-register" class="register">Register</li>
-          </ul>
-        </div>
-        <div class="menu hidden-menu">
-            <i class="fa-solid fa-bars fa-xl"></i>
-          
-        </div>
-      </div>
-
-      <!--Menu Options - For Mobile Version -->
-      <div class="menu-bg menu-card-hidden">
-        <div class="menu-left-side">
-          <div class="menu-left-text">
-            <div class="para">
-              Join EduCare and simplify your student life today - it’s free,
-              fast, and designed for you
-            </div>
-            <div class="menu-left-button login menu-close">Get Started</div>
+      <div class="nav-bar black-color">
+        <div class="nav-container black-color">
+          <div class="nav-logo">
+            <!-- Logo -->
+          </div>
+          <div class="nav-btn">
+            <ul>
+              <li id="nav-btn">
+                <a class="nav-btn-theme" href="#home">Home</a>
+              </li>
+              <li id="nav-btn">
+                <a class="nav-btn-theme" href="#features">Features</a>
+              </li>
+              <li id="nav-btn">
+                <a class="nav-btn-theme" href="#about">About</a>
+              </li>
+              <li id="nav-btn">
+                <a class="nav-btn-theme" href="#contact">Contact</a>
+              </li>
+              <li id="nav-btn" class="login ">
+                <a class="nav-btn-theme" >Login</a>
+              </li>
+              <li id="nav-btn" class="register">
+                <a class="nav-btn-theme" >Register</a>
+              </li>
+              <li id="nav-btn" class="theme-changer">
+                <i class="fas fa-sun"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-menu hidden-nav-menu">
+            <i class="fa-solid fa-bars"></i>
           </div>
         </div>
-        <div class="menu-right-side">
-          <a class="menu-close menu-btn menu-Home" href="#home"
-            ><div>Home</div></a
-          >
-          <a class="menu-close menu-btn menu-Dashboard" href="#"
-            ><div>Dashboard</div></a
-          >
-          <a class="menu-close menu-btn menu-Features" href="#features"
-            ><div>Features</div></a
-          >
-          <a class="menu-close menu-btn menu-About" href="#about"
-            ><div>About</div></a
-          >
-          <a class="menu-close menu-btn menu-Contact" href="#contact"
-            ><div>Contact</div></a
-          >
-          <div class="menu-close menu-btn menu-Login login">Login</div>
-          <div class="menu-close menu-btn menu-Register register">Register</div>
+        <div class="menu-bar hidden-menu-bar">
+          <ul>
+            <li id="menu-btn">
+              <a class="nav-btn-theme" href="#home">Home</a>
+            </li>
+            <li id="menu-btn">
+              <a class="nav-btn-theme" href="#dashboard">Dashboard</a>
+            </li>
+            <li id="menu-btn">
+              <a class="nav-btn-theme" href="#features">Features</a>
+            </li>
+            <li id="menu-btn">
+              <a class="nav-btn-theme" href="#about">About</a>
+            </li>
+            <li id="menu-btn">
+              <a class="nav-btn-theme" href="#contact">Contact</a>
+            </li>
+            <li id="menu-btn" class="login">
+              <a class="nav-btn-theme">Login</a>
+            </li>
+            <li id="menu-btn" class="register">
+              <a class="nav-btn-theme">Register</a>
+            </li>
+            <li id="menu-btn" class="theme-changer">
+              <i class="fas fa-sun"></i>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
-    <!-- Main Body ----------------------------->
+
+    <!-- Main body starts here -->
+
     <main>
-      <!-- This is a login pop up menu --------->
       <div class="login-popup login-panel-hidden">
         <div class="login-card">
           <div class="login-title">EduCare - Login</div>
@@ -129,9 +139,7 @@
         </div>
       </div>
       <!-- Register pop up ends here -------------->
-
-      <!-- Section starts from here --------------->
-      <section id="home">
+            <section id="home">
         <div class="hero-container">
           <div class="hero-title-box">
             <div class="hero-title"></div>
@@ -387,8 +395,8 @@
         <div class="footer-logo-box">
           <div class="footer-logo"></div>
           <div class="footer-btn">
-            <a href="#home" id="footer-login" class="login button">Login</a>
-            <a href="#home" id="footer-register" class="register button"
+            <a id="footer-login" class="login button ">Login</a>
+            <a id="footer-register" class="register button "
               >Register</a
             >
           </div>
@@ -431,7 +439,7 @@
         <p>Made with <i class="fa-solid fa-heart"></i> by Monirul & Hafiza</p>
       </div>
     </footer>
-
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
