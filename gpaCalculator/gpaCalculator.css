@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+html {
+  scroll-padding-top: 80px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  background-color: #cce7fc;
+  position: fixed;
+  z-index: 9999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Nav Button */
+
+.nav-logo {
+  height: 100px;
+  width: 140px;
+  background-image: url("../images/EduCareDark.png");
+  background-position: center center;
+  background-size: cover;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 50%;
+}
+
+.nav-btn ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.nav-btn ul li {
+  border: none;
+  padding: 7px 10px;
+  border-radius: 10px;
+}
+
+.nav-btn ul li:hover {
+  box-shadow: 0 0 8px rgba(0, 128, 255, 0.3);
+  background-color: rgba(27, 126, 224, 0.2);
+  transition: 0.3s ease-out;
+}
+
+.nav-btn ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 550;
+  font-size: 1.076rem;
+}
+
+/* Theme Changer */
+
+.theme-changer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0px 15px 0px 10px;
+  cursor: pointer;
+}
+
+.theme-changer i {
+  font-size: 1.3rem;
+  padding: 10px;
+}
+
+/* Hidden menu */
+
+.nav-menu {
+  height: 100%;
+  display: none;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.nav-menu i {
+  font-size: 1.8rem;
+}
+
+.nav-bar-hidden {
+  min-height: fit-content;
+  flex-direction: column;
+  justify-content: start;
+  background-color: #badff9;
+}
+
+/* Menu Button */
+
+.menu-bar {
+  width: 100%;
+  padding: 10px 10px 10px 0px;
+}
+
+.menu-bar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+#menu-btn {
+  margin: 5px;
+  border: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(0, 128, 255, 0.3);
+  background-color: rgba(27, 126, 224, 0.2);
+  cursor: pointer;
+}
+
+#menu-btn:hover {
+  background-color: rgba(27, 126, 224, 0.5);
+  box-shadow: 0 0 8px rgba(0, 128, 255, 0.5);
+  transition: 0.2s ease;
+  transform: scale(0.95, 0.95);
+}
+
+#menu-btn a {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+}
+
+.hidden-menu-bar {
+  display: none;
+}
+
+/* Main body CSS starts here */
+
+#home {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.remove-bottom {
+  color: #181818;
+  font-family: "Open Sans", "Georgia", "Times New Roman", serif;
+  font-weight: normal;
+}
+.calcGPA {
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1.remove-bottom {
+  font-weight: bolder;
+  text-align: center;
+}
+
+hr {
+  border: solid red;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0;
+}
+
+hr.medium {
+  border-width: 5px 0 0;
+}
+
+a,
+a:visited {
+  color: #333;
+  text-decoration: none;
+  outline: 0;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+input[type="text"].small,
+input[type="password"].small,
+input[type="email"].small,
+textarea.small,
+select.small {
+  width: calc(50% - 10px);
+  margin-right: 20px;
+}
+
+.red {
+  border: 1px solid red;
+  padding: 1px;
+}
+
+.green {
+  border: 1px solid green;
+  padding: 1px;
+}
+
+.message {
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#gpa-table {
+  width: 100%;
+}
+
+#gpa-table td {
+  padding: 10px;
+}
+
+.gpa-btn{
+  padding: 10px 15px;
+  border: 0.5px solid gray;
+  border-radius: 15px;
+  background-color: blue;
+  color: white;
+  margin: 10px;
+}
+
+.footer-container {
+  height: 300px;
+  width: 100%;
+  background-color: #a6bbfb;
+  display: flex;
+  gap: 1rem;
+  padding: 5px 30px 5px 20px;
+}
+
+.footer-logo-box {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 0px 5px 10px;
+  gap: 1rem;
+}
+
+.footer-logo {
+  height: 100px;
+  width: 150px;
+  background-image: url("../images/EduCare-Black.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-child {
+  width: 18%;
+  height: 100%;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-child a {
+  text-decoration: none;
+  color: #1d233e;
+  font-size: 0.8rem;
+}
+
+.footer-btn .button {
+  border: none;
+  padding: 8px 15px;
+  border-radius: 25px;
+  background-color: #1d233e;
+  backdrop-filter: blur(10px);
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+}
+
+.bottom-section {
+  height: 20px;
+  background-color: #a6bbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-section p {
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+/* Media queries CSS for responsiveness */
+
+@media only screen and (max-width: 1360px) {
+  .footer-btn button {
+    transform: scale(0.9, 0.9);
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .footer-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
+  html {
+    scroll-padding-top: 150px;
+  }
+
+  #home {
+    padding: 150px 10px 10px 10px;
+  }
+  .nav-bar {
+    height: 150px;
+  }
+  .nav-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 50px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-items: center;
+  }
+  .nav-logo {
+    grid-area: 1 / 1 / 2 / 6;
+    margin-left: 0px;
+  }
+  .nav-btn {
+    grid-area: 2 / 1 / 3 / 6;
+  }
+  .nav-btn,
+  .nav-logo {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-btn ul {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  input[type="text"].small,
+  input[type="password"].small,
+  input[type="email"].small,
+  textarea.small,
+  select.small {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-name {
+    width: 80%;
+  }
+  .nav-name p {
+    font-size: 1.7rem;
+  }
+  .nav-menu {
+    display: flex;
+  }
+  .theme-changer {
+    display: none;
+  }
+  .nav-container {
+    height: 80px;
+    align-items: center;
+    background-color: #cce7fc;
+  }
+  #home {
+    padding-top: 80px;
+  }
+  html {
+    scroll-padding-top: 80px;
+  }
+  .logo {
+    width: 100px;
+  }
+  .hidden-menu {
+    display: block;
+  }
+  .footer-container {
+    height: 630px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .footer-logo-box {
+    grid-area: 1 / 1 / 3 / 2;
+    justify-self: center;
+    place-content: center;
+  }
+  .footer-child {
+    width: 100%;
+    align-self: center;
+  }
+  .footer-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .footer-main {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .footer-features {
+    grid-area: 1 / 5 / 2 / 6;
+  }
+  .footer-legal {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .footer-social {
+    grid-area: 2 / 5 / 3 / 6;
+  }
+  heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #time {
+    text-align: left;
+    margin-top: 10px;
+    min-width: auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .nav-btn {
+    display: none;
+  }
+  .nav-name {
+    width: 90%;
+  }
+  .nav-name p {
+    font-size: 1.4rem;
+  }
+}

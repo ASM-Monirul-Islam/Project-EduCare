@@ -164,190 +164,6 @@ a {
 
 /* Main body CSS starts here */
 
-/* EduCare */
-
-/* Login - Popup  */
-.login-popup {
-  min-height: 100vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 80px;
-  z-index: 100;
-}
-
-.login-card {
-  height: auto;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  border: none;
-  padding: 15px 20px;
-  border-radius: 10px;
-  gap: 0.4rem;
-  box-shadow: 0 0 10px;
-  z-index: 10000;
-}
-
-.login-title {
-  text-align: center;
-  margin: 10px 0px;
-  font-size: 1.4rem;
-  font-weight: 900;
-  font-family: "Times New Roman";
-}
-
-#userName,
-#password {
-  padding: 15px 5px;
-  margin: 3px;
-  border: none;
-  border-radius: 10px;
-  background-color: #1d233e2a;
-}
-
-.login-forgot-pass {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 7px;
-  margin-top: 8px;
-}
-
-.login-forgot-pass p {
-  font-size: 0.75rem;
-}
-
-.login-forgot-pass a {
-  text-decoration: none;
-  font-size: 0.75rem;
-  font-style: italic;
-}
-
-.login-card-btn {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0px 5px;
-  margin-top: 15px;
-}
-
-#login-submit,
-#login-close {
-  padding: 8px 30px;
-  border-radius: 15px;
-  border: none;
-  background-color: #1d233e3a;
-  box-shadow: 0 0 4px #1d233e2a;
-  cursor: pointer;
-}
-
-.login-panel-hidden {
-  display: none;
-  transition: 0.5s ease;
-}
-
-/* Register menu */
-
-.register-popup {
-  min-height: 100vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 80px;
-  z-index: 100;
-}
-
-.register-card {
-  height: auto;
-  width: 30%;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  border: none;
-  padding: 15px 20px;
-  border-radius: 10px;
-  gap: 0.4rem;
-  box-shadow: 0 0 10px;
-  z-index: 10000;
-}
-
-.register-title {
-  text-align: center;
-  margin: 10px 0px;
-  font-size: 1.4rem;
-  font-weight: 900;
-  font-family: "Times New Roman";
-}
-
-.register-input {
-  padding: 15px 5px;
-  margin: 3px;
-  border: none;
-  border-radius: 10px;
-  background-color: #1d233e2a;
-}
-
-.register-checkbox {
-  height: 15px;
-  width: 15px;
-  margin: 0px 5px 0px 10px;
-}
-
-.agree-checkbox {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 10px;
-  color: #2a3157;
-  font-size: 0.87rem;
-}
-
-.register-signin {
-  margin: 5px 0px 10px 10px;
-  color: #2a3157;
-  font-size: 0.87rem;
-}
-
-.register-signin a {
-  text-decoration: none;
-  font-size: 0.87rem;
-  font-style: italic;
-}
-
-.register-btn {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.register-btn button {
-  padding: 8px 30px;
-  border-radius: 15px;
-  border: none;
-  background-color: #1d233e3a;
-  box-shadow: 0 0 4px #1d233e2a;
-  cursor: pointer;
-}
-
-.register-panel-hidden {
-  display: none;
-}
-
-.register,
-.login {
-  cursor: pointer;
-}
-
 section {
   min-height: 100vh;
   width: 100%;
@@ -361,381 +177,6 @@ section {
   flex-direction: column;
 }
 
-.hero-container {
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  flex-wrap: wrap;
-  margin-top: 50px;
-}
-
-.hero-title-box {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-  width: 400px;
-}
-
-.hero-image-box {
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  width: 550px;
-  padding: 15px 10px;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
-
-.hero-title {
-  height: 100%;
-  width: 100%;
-  border: none;
-  background-image: url("images/EduCaretitle.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  float: right;
-}
-
-.hero-image {
-  height: 100%;
-  width: 100%;
-  border: none;
-  background-image: url("images/HeroImage_png\ file.png");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#why-educare {
-  background-color: #f4f8fc;
-  padding: 50px 20px;
-  color: #1d233e;
-  width: 100%;
-  margin-top: 100px;
-}
-
-.why-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.why-container h2 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.why-subtext {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  color: #333;
-}
-
-.why-card-wrapper {
-  display: flex;
-  gap: 2rem;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-
-.why-card {
-  padding: 20px;
-  border-radius: 15px;
-  border: none;
-  width: 25%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
-}
-
-.why-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
-
-.why-card i {
-  font-size: 2rem;
-  color: #1d233e;
-  margin-bottom: 0.8rem;
-}
-
-#about {
-  padding: 50px 20px;
-  color: #1d233e;
-  width: 100%;
-  background: #f4f8fc;
-  font-family: "Segoe UI", sans-serif;
-}
-
-.about-container {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.about-left {
-  flex: 1 1 500px;
-}
-
-.about-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 0.8rem;
-}
-
-.about-text p {
-  font-size: 1rem;
-  margin-bottom: 0.8rem;
-  width: 55%;
-}
-
-.about-subtext {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  color: #333;
-  line-height: 1.6;
-}
-
-.about-details {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.about-box {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease-in-out;
-}
-
-.about-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-}
-
-.about-box h3 {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-  color: #1d233e;
-}
-
-.about-box p {
-  font-size: 1rem;
-  color: #444;
-  line-height: 1.6;
-}
-.CTA-box {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.about-cta {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 12px 30px;
-  background-color: #1d233e;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.about-cta:hover {
-  background-color: #007bff;
-  transform: translateY(-3px);
-}
-
-.about-right {
-  flex: 1 1 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-img {
-  width: 100%;
-  max-width: 400px;
-  height: 300px;
-  background-image: url("images/your-image.png"); /* Replace this */
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
-#contact {
-  padding: 80px 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.contact-container {
-  display: flex;
-  height: 100%;
-  width: 100%;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.contact-left {
-  height: 500px;
-  width: 48%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-end;
-  padding: 20px 15px;
-  gap: 0.5rem;
-}
-
-.contact-text {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
-}
-
-.first-para {
-  font-size: 2.5rem;
-  font-weight: 700;
-  width: 70%;
-  margin-bottom: 15px;
-  text-align: start;
-  color: #1c1c1c;
-}
-
-.sec-para {
-  width: 70%;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: #555;
-}
-
-.contact-details p {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #222;
-}
-
-.contact-details div {
-  font-size: 0.9rem;
-}
-
-.contact-details {
-  margin-top: 10px;
-  width: 70%;
-  color: #444;
-}
-
-.contact-images {
-  width: 70%;
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  gap: 2rem;
-}
-
-.image1,
-.image2 {
-  height: 100%;
-  width: 30%;
-  background-color: red;
-  margin-top: 15px;
-  border-radius: 10px;
-  border: none;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.image1 {
-  background-image: url("images/Monirul.jpg");
-}
-
-.image2 {
-  background-image: url("images/Hafiza.JPG");
-}
-
-.contact-right {
-  width: 47%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-
-.contact-form {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  padding: 40px 25px;
-  justify-content: flex-start;
-  gap: 0.5rem;
-  background-color: white;
-  border: 1px solid gray;
-  border-radius: 10px;
-}
-
-.contact-form input {
-  padding: 10px 8px;
-  border: 1px solid gray;
-  border-radius: 10px;
-  font-size: 0.9rem;
-}
-
-.contact-form label {
-  font-size: 0.9rem;
-  margin-top: 5px;
-}
-
-.contact-form textarea {
-  border: 1px solid gray;
-  padding: 5px 8px;
-  color: gray;
-  font-size: 0.9rem;
-}
-
-.contact-form button {
-  border: none;
-  padding: 10px 8px;
-  background-color: gray;
-  opacity: 0.9;
-  cursor: pointer;
-  color: white;
-  border-radius: 5px;
-  margin-top: 5px;
-}
 
 #features {
   padding: 50px 20px;
@@ -950,9 +391,41 @@ section {
   font-style: italic;
 }
 
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.user-hero-image {
+  background-image: url("images/user-hero-image.avif");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.4;
+}
 
+.welcome-msg {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-top: 20px;
+}
 
+.welcome-msg-2 {
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+.welcome-msg-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 
 /* Media queries CSS for responsiveness */
 
@@ -967,6 +440,14 @@ section {
   .card-image {
     height: 45%;
     width: 80%;
+  }
+  .welcome-msg {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  .welcome-msg-2 {
+    font-size: 5rem;
+    font-weight: 800;
   }
 }
 
@@ -1049,6 +530,12 @@ section {
     align-items: center;
     justify-content: center;
   }
+  .welcome-msg-box{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -1191,6 +678,16 @@ section {
     height: 250px;
     width: 250px;
   }
+  .welcome-msg-box{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .welcome-msg{
+    font-size: 2rem;
+  }
+  .welcome-msg-2{
+    font-size: 3.5rem;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1202,5 +699,11 @@ section {
   }
   .nav-name p {
     font-size: 1.4rem;
+  }
+  .welcome-msg{
+    font-size: 1.7rem;
+  }
+  .welcome-msg-2{
+    font-size: 3rem;
   }
 }

@@ -23,55 +23,6 @@ menu.addEventListener("click", () => {
   menuBartoggle();
 });
 
-// Theme Changer - need to improve more
-
-const light = '<i class="fas fa-sun"></i>';
-const dark = '<i class="fa-solid fa-moon"></i>';
-const themeChanger = document.querySelectorAll(".theme-changer");
-const blackColor = document.querySelectorAll(".black-color");
-const navBtnTheme = document.querySelectorAll(".nav-btn-theme");
-
-function Light_to_dark() {
-  //	Light to dark function
-  themeChanger.innerHTML = dark;
-  blackColor.forEach((e) => {
-    e.style.backgroundColor = "black";
-    e.style.color = "white";
-  });
-  navBtnTheme.forEach((e) => {
-    e.style.color = "white";
-  });
-}
-
-function Dark_to_light() {
-  //   Dark to Light Function
-
-  blackColor.forEach((e) => {
-    e.style.backgroundColor = "#cce7fc";
-    e.style.color = "black";
-  });
-  navBtnTheme.forEach((e) => {
-    e.style.color = "black";
-  });
-}
-
-let isLight = true;
-
-themeChanger.forEach((e) => {
-  e.addEventListener("click", () => {
-    if (isLight) {
-      Light_to_dark();
-      e.innerHTML = dark;
-    } else {
-      e.innerHTML = light;
-      Dark_to_light();
-    }
-    isLight = !isLight;
-  });
-});
-
-// Theme changer ends here...
-
 // Navigator button
 
 const btn = document.querySelectorAll("#menu-btn");
@@ -112,5 +63,142 @@ register.forEach((e) => {
 registerClose.forEach((e) => {
   e.addEventListener("click", () => {
     registerPopup.classList.toggle("register-panel-hidden");
+  });
+});
+
+// Registration form validation
+function check_validation() {
+  const nameInput = document.querySelector(".name");
+  const userNameInput = document.querySelector(".userName");
+  const emailInput = document.querySelector(".email");
+  const passwordInput = document.querySelector(".password");
+  const confirmPasswordInput = document.querySelector(".confirmPassword");
+  const checkbox = document.querySelector(".checkbox");
+  const error = document.querySelectorAll(".error");
+
+  error.forEach((e) => {
+    e.textContent = "";
+  });
+
+  const nameErr = document.querySelector(".nameErr");
+  const emailErr = document.querySelector(".emailErr");
+  const passwordErr = document.querySelector(".passwordErr");
+  const confirmPasswordErr = document.querySelector(".confirmPasswordErr");
+  const checkboxErr = document.querySelector(".checkboxErr");
+  const userNameErr = document.querySelector(".userNameErr");
+  const finalErr = document.querySelector(".finalMsg");
+
+  let valid = true;
+
+  nameInput.addEventListener("input", (e) => {
+    const name = nameInput.value.trim();
+    if (!name) {
+      nameErr.textContent = "Enter your name";
+      valid = false;
+    } else if (name.length < 3) {
+      nameErr.textContent = "Your name must contain at least 3 letters!";
+      valid = false;
+    } else {
+      nameErr.textContent = "";
+    }
+  });
+
+  userNameInput.addEventListener("input", (e) => {
+    const userName = userNameInput.value.trim();
+    if (!userName) {
+      userNameErr.textContent = "Enter a user name";
+      valid = false;
+    } else if (userName.length < 2) {
+      userNameErr.textContent = "User name must contain at least 2 letters!";
+      valid = false;
+    } else {
+      userNameErr.textContent = "";
+    }
+  });
+
+  emailInput.addEventListener("input", (e) => {
+    const email = emailInput.value.trim();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email) {
+      emailErr.textContent = "Enter your email";
+      valid = false;
+    } else if (!emailPattern.test(email)) {
+      emailErr.textContent = "Invalid email format!";
+      valid = false;
+    } else {
+      emailErr.textContent = "";
+    }
+  });
+
+  passwordInput.addEventListener("input", (e) => {
+    const password = passwordInput.value.trim();
+    const uppercase = /[A-Z]/.test(password);
+    const lowercase = /[a-z]/.test(password);
+    const specialcharacter = /[!@#$%^&*]/.test(password);
+    const number = /[0-9]/.test(password);
+
+    if (!password) {
+      passwordErr.textContent = "Enter a password";
+      valid = false;
+    } else if (!uppercase) {
+      passwordErr.textContent =
+        "Your password must contain an uppercase character!";
+      valid = false;
+    } else if (!lowercase) {
+      passwordErr.textContent =
+        "Your password must contain a lowercase character!";
+      valid = false;
+    } else if (!specialcharacter) {
+      passwordErr.textContent =
+        "Your password must contain a special character!";
+      valid = false;
+    } else if (!number) {
+      passwordErr.textContent =
+        "Your password must contain a numerical character!";
+      valid = false;
+    } else if (password.length < 8) {
+      passwordErr.textContent =
+        "Your password must contain at least 8 characters!";
+      valid = false;
+    } else {
+      passwordErr.textContent = "";
+    }
+  });
+
+  confirmPasswordInput.addEventListener("input", (e) => {
+    const confirmPassword = confirmPasswordInput.value.trim();
+    const password = passwordInput.value.trim();
+    if (!confirmPassword) {
+      confirmPasswordErr.textContent = "Retype your password!";
+      valid = false;
+    } else if (password !== confirmPassword) {
+      confirmPasswordErr.textContent = "Passwords do not match!";
+      valid = false;
+    } else {
+      confirmPasswordErr.textContent = "";
+    }
+  });
+}
+
+check_validation();
+
+registerPopup.addEventListener("submit", (e) => {
+  alert("Registration successful!");
+});
+
+// Feature buttons
+
+const future = document.querySelectorAll(".future");
+const loginFirst = document.querySelectorAll(".login-first");
+
+future.forEach((e) => {
+  e.addEventListener("click", () => {
+    alert("This feature is still under development! Stay tuned!!!");
+  });
+});
+
+loginFirst.forEach((e) => {
+  e.addEventListener("click", () => {
+    alert("You need to login first!!!");
   });
 });
