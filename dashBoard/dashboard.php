@@ -49,9 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 				</div>
 				<div class="nav-btn">
 					<ul>
-						<li id="nav-btn">
-							<a class="nav-btn-theme" href="../profile.php">Profile</a>
-						</li>
+						
 						<li id="nav-btn">
 							<a class="nav-btn-theme" href="../user.php">Home</a>
 						</li>
@@ -66,9 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 			</div>
 			<div class="menu-bar hidden-menu-bar">
 				<ul>
-					<li id="menu-btn">
-						<a class="nav-btn-theme" href="profile.php">Profile</a>
-					</li>
+					
 					<li id="menu-btn">
 						<a class="nav-btn-theme" href="user.php">Home</a>
 					</li>
